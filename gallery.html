@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+               
+               
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="news.html">NEWS/EVENTS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                 
+            </div>
+            <h1>SOOFIA INTERNATIONAL SCHOOL</h1>
+           <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <div class="text-box">
+     
+        </div>
+    </section>
+    <!------ Gallery page ------>
+
+    <section class="gallery" aria-label="Photo gallery">
+        <a href="#img1" aria-describedby="desc1">
+          <img src="appreciation.jpg" alt="Application" />
+        </a>
+        <a href="#img2" aria-describedby="desc2">
+          <img src="teacher recognition.jpg" alt="Recognition" />
+        </a>
+        <a href="#img3" aria-describedby="desc3">
+          <img src="business expo.jpg" alt="Business Expo" />
+        </a>
+        <a href="#img4" aria-describedby="desc4">
+          <img src="students recognition.jpg" alt="Students Recognition" />
+        </a>
+        <a href="#img5" aria-describedby="desc5">
+          <img src="yellow house.jpg" alt="yellow" />
+        </a>
+        <a href="#img6" aria-describedby="desc6">
+          <img src="blue house.jpg" alt="blue" />
+        </a>
+        <a href="#img7" aria-describedby="desc7">
+          <img src="red house.jpg" alt="red" />
+        </a>
+        <a href="#img8" aria-describedby="desc8">
+          <video width="700" height="240" controls>
+              <source src="Soofia Student.mp4" type="video/mp4">
+        </a>
+      </section>
+
+    <!----- Footer ------>
+    <footer>
+        <div class="row">
+            <img src="logo.jpg">
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                
+            </ul>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p class="email-id">info@soofiainternational.org</p>
+                <p>+266 22460 694</p>
+                <h4>Soofia International School Butha Buthe 400,Lesotho</h4>
+            </div>
+        </div>
+        <p>© 2025 Soofia International School | All Rights Reserved</p>
+    </footer>
+    <!------JavaScript ----->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right="0";
+        }
+        function hideMenu() {
+            navLinks.style.right="-200px";
+        }
+    </script>
+    
+</body>
+</html>
